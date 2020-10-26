@@ -71,7 +71,8 @@ public class Plot {
 			return true;
 		}else if(plot.x + plot.width < x + width && plot.x + plot.width > x && plot.y + plot.depth > y + depth && plot.y < y+depth){
 			return true;
-			
+		}else if(x + width > plot.x && x + width < plot.x + plot.width && y + depth > plot.y && y + depth <= plot.y + plot.depth) {
+			return true;
 		}else{
 			return false;
 		}
